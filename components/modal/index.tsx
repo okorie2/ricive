@@ -17,7 +17,8 @@ export default function ModalCard({ text, subText, percentLeft }: Props) {
         </button>
       </div>
       <div
-        className={`absolute triangle -top-[2px] bg-[#5AA645] left-[${percentLeft}%]`}
+        className={`absolute triangle -top-[2px] bg-[#5AA645] `}
+        style={{ left: `${percentLeft}%` }}
       ></div>
     </div>
   );
