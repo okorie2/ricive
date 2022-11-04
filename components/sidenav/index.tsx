@@ -21,7 +21,7 @@ import Search from "components/search";
 
 export default function Sidenav() {
   return (
-    <div className=" w-[23vw] border-r border-light-gray2 px-[1.5vw] fixed h-screen">
+    <div className=" w-[18vw] border-r border-light-gray2 px-[1.5vw] fixed h-screen">
       <div className="logo pt-8 pb-4">
         <Image src={Logo} alt="logo" />
       </div>

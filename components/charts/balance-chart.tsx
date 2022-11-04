@@ -6,8 +6,8 @@ const BalanceChart = () => {
   const option = {
     grid: {
       show: false,
-      left: "0%",
-      width: "100%",
+      left: "-10%",
+      width: "110%",
       height: "70%",
     },
     xAxis: {
@@ -15,12 +15,13 @@ const BalanceChart = () => {
         show: true,
       },
       //   showGrid: false,
-
       axisTick: {
         show: false,
       },
+      offset: 3,
       type: "category",
       data: [
+        "",
         "Jan",
         "Feb",
         "Mar",
@@ -43,6 +44,7 @@ const BalanceChart = () => {
       axisLabel: {
         show: false,
       },
+
       splitLine: {
         show: true,
         interval: 4,
@@ -58,7 +60,7 @@ const BalanceChart = () => {
     series: [
       {
         data: [
-          420, 550, 430, 620, 450, 740, 470, 750, 500, 870, 530, 810, 560, 920,
+          320, 280, 430, 400, 450, 640, 470, 520, 500, 640, 530, 610, 560, 920,
         ],
         type: "line",
         smooth: true,
@@ -86,8 +88,9 @@ const BalanceChart = () => {
       },
       {
         data: [
-          320, 450, 330, 720, 350, 640, 370, 650, 400, 770, 430, 710, 460, 820,
+          260, 240, 330, 290, 350, 500, 370, 450, 400, 580, 430, 500, 460, 820,
         ],
+
         type: "line",
         smooth: true,
         showSymbol: false,
@@ -95,7 +98,7 @@ const BalanceChart = () => {
           silent: true,
         },
         lineStyle: {
-          color: "#7BC068",
+          color: "#A0D293",
           width: 2,
         },
         areaStyle: {
@@ -103,7 +106,7 @@ const BalanceChart = () => {
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
             {
               offset: 0,
-              color: "#7BC068",
+              color: "#A0D293",
             },
             {
               offset: 1,
@@ -114,7 +117,7 @@ const BalanceChart = () => {
       },
       {
         data: [
-          550, 300, 670, 330, 610, 360, 720, 220, 350, 330, 420, 250, 540, 270,
+          120, 100, 250, 240, 270, 360, 220, 230, 350, 330, 380, 350, 340, 270,
         ],
         type: "line",
         smooth: true,
@@ -123,7 +126,7 @@ const BalanceChart = () => {
           silent: true,
         },
         lineStyle: {
-          color: "#7BC068",
+          color: "#5AA645",
           width: 2,
         },
         areaStyle: {

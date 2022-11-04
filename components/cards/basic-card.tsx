@@ -35,7 +35,10 @@ export default function BasicCard({ title, ...rest }: Props) {
           <div className="flex mt-4 gap-x-1 text-sm ">
             <div className="rate flex gap-x-1 items-center justify-start w-full">
               {rest.direction === "up" ? <ArrowUp /> : <ArrowDown />}
-              <p className={`text-[${rest.color}] font-semibold text-sm`}>
+              <p
+                className={` font-semibold text-sm`}
+                style={{ color: rest.color }}
+              >
                 {rest.rate}
               </p>
             </div>

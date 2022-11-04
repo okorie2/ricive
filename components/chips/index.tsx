@@ -15,17 +15,65 @@ export const PercentUpBg = ({ percent }: PercentProps) => {
 export const Chip = ({
   name,
   color,
-  textColor,
+  dotColor,
+  bg,
 }: {
   name: string;
   color: string;
-  textColor: string;
+  dotColor: string;
+  bg: string;
 }) => {
   return (
     <div
-      className={`${color} bg-opacity-10 rounded-2xl text-xs px-2 py-1 w-max flex items-center gap-x-2 ${textColor}`}
+      className={`  rounded-2xl text-xs px-2 py-1 w-max flex items-center gap-x-2 `}
+      style={{ backgroundColor: bg, color: color }}
     >
-      <div className={`${color} w-2 h-2 rounded-full `}></div> {name}
+      <div
+        className={` w-2 h-2 rounded-full `}
+        style={{ backgroundColor: dotColor }}
+      ></div>
+      {name}
     </div>
+  );
+};
+
+export const ColoredChips = ({
+  color,
+  text,
+}: {
+  color: string;
+  text: string;
+}) => {
+  return (
+    <>
+      {
+        {
+          red: (
+            <Chip
+              name={text}
+              color={"#C11574"}
+              dotColor={"#EE46BC"}
+              bg={"#FDF2FA"}
+            />
+          ),
+          blue: (
+            <Chip
+              name={text}
+              color={"#175CD3"}
+              dotColor={"#2E90FA"}
+              bg={"#EFF8FF"}
+            />
+          ),
+          green: (
+            <Chip
+              name={text}
+              color={"#027A48"}
+              dotColor={"#12B76A"}
+              bg={"#ECFDF3"}
+            />
+          ),
+        }[color]
+      }
+    </>
   );
 };

@@ -10,7 +10,7 @@ export default function Layout({ children }: Props) {
         <div className="  ">
           <Sidenav />
         </div>
-        <div className="ml-[23vw] w-[77vw]">{children}</div>
+        <div className="ml-[18vw] w-full">{children}</div>
       </div>
     </>
   );

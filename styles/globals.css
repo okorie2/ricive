@@ -49,3 +49,19 @@ a {
 .active svg defs {
   stroke: #8EC97D;
 }
+.triangle {
+  width: 1em;
+  height: 1em;
+  border-top-right-radius: 10%;
+}
+@media (min-width: 1024px) {
+  .triangle {
+    width: 1em;
+    height: 1em;
+    border-top-right-radius: 30%;
+  }
+}
+
+.triangle {
+  transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
+}
